@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:context="http://www.springframework.org/schema/context"
+	 xmlns:p="http://www.springframework.org/schema/p"
+	 
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context.xsd">
+	 
+	 <!-- collaborators and configuration for this bean go here -->
+	 
+<!-- By using Collection --> 
+
+	<bean class="com.springcore.collections.Emp" name="Emp1">
+	 	<property name="name" value="Radha" />
+	 	
+	 	<property name="phones">
+	 		<list>
+	 			<value>123</value>
+	 			<value>1234</value>
+	 			<value>1235</value>
+	 			<value>12367</value>
+	 		</list>
+	 	</property>
+	 	
+	 	<property name="addresses">
+	 		<set>
+	 			<value>Wardha</value>
+	 			<value>Nagpur</value>
+	 			<value>Pune</value>
+	 			<value>Mumbai</value>
+	 		</set>
+	 	</property>
+	 	
+	 	<property name="courses">
+	 		<map>
+	 			
+	 			<entry key="Course1" value="Java" />
+				<entry key="Course2" value="Python" />
+	 			<entry key="Course3" value="HTML" />
+	 		</map>
+	 	</property>
+	 	
+	 	<property name="pattarn">
+			<props>
+				<prop key="name">Ashish</prop>
+				<prop key="name">Prince</prop>
+				<prop key="name">Kritesh</prop>
+			</props>	 		
+	 	</property>
+	</bean>
+	
+	 
+	 <!-- more bean definitions go here -->
+</beans>

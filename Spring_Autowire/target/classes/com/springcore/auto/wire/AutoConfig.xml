@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:context="http://www.springframework.org/schema/context"
+	 xmlns:p="http://www.springframework.org/schema/p"
+	 
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context.xsd">
+	 
+	 <!-- collaborators and configuration for this bean go here -->
+	 
+<!-- Day-18 : Autowiring byName, byType, constructor --> 
+
+	<bean class="com.springcore.auto.wire.Address" name="address">
+		<property name="street" value="Number-5" /> 
+		<property name="city" value="Wardha" /> 
+	</bean>
+	 
+	<bean class="com.springcore.auto.wire.Emp" name="emp1" autowire="constructor" />
+<!-- autowire = byName, byType, constructor all working. for by name above bean name match with Emp feald name.-->
+
+</beans>

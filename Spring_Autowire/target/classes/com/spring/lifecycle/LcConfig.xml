@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:context="http://www.springframework.org/schema/context"
+	 xmlns:p="http://www.springframework.org/schema/p"
+	 
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+	
+<!--Not Working for only one bean, something problem in statement... 
+	<bean class="org.springframework.context.annotation.CommonAnnoationBeanPostProccessor" /> -->
+	
+<!-- Day-14 : How to call LifeCycle Method --> 
+
+	<!-- <bean class="com.spring.lifecycle.Samosa" name="samosa1" init-method="init" destroy-method="destroy">
+		 <property name="price" value="20.00"></property>
+	</bean> -->
+
+
+<!-- Day-15 : Implementing LifeCycle using Interface --> 
+
+	<!-- <bean class="com.spring.lifecycle.Pepsi" name="pepsi1">
+		 <property name="price" value="80.00"></property>
+	</bean> -->
+	
+
+<!-- Day-16 : Implementing LifeCycle using Annotation --> 
+
+	<bean class="com.spring.lifecycle.Example" name="example1">
+		 <property name="subject" value="Java"></property>
+	</bean>
+</beans>
